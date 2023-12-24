@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap");
+@layer utilities {
+  h1,
+  h2 {
+    @apply text-[40px] sm:text-[65px] font-bold font-cormorant text-white;
+  }
+
+  h3 {
+    @apply text-[35px] sm:text-[45px] font-bold font-cormorant text-white;
+  }
+  h4 {
+    @apply text-[30px] sm:text-[40px] font-bold font-cormorant text-white;
+  }
+  h5 {
+    @apply text-[35px] font-bold font-cormorant text-white;
+  }
+  h6 {
+    @apply text-[30px] font-bold font-cormorant text-white;
+  }
+  p,
+  ul,
+  ol {
+    @apply text-xl font-outfit font-normal text-gray-1;
+  }
+}
+@layer components {
+  .mainWidth {
+    @apply max-w-[1400px] mx-auto w-full;
+  }
+  .mainPadding {
+    @apply px-3 lg:px-5 2xl:px-0;
+  }
+  .animate {
+    @apply transition-colors duration-300;
+  }
+  .pSize {
+    @apply text-lg sm:text-[22px];
+  }
+}
